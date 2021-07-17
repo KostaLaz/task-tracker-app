@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const Header = ({ title, onAdd }) => {
+const Header = ({ title, onAdd, showAdd }) => {
 
 
     const onClick = () => {
@@ -12,7 +12,9 @@ const Header = ({ title, onAdd }) => {
     return (
         <header className='header'>
             <h1>{title}</h1>
-            <Button color='green' text='Add' onClick={onAdd} />
+            <Button color='green' 
+            color={showAdd ? 'red' : 'green'}
+            text={showAdd ? 'Close' : 'Add'} onClick={onAdd} />
         </header>
     )
 }
