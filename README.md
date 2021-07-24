@@ -1,4 +1,4 @@
-# Simple task tracking web application build with React 
+# Simple task tracking web application build with React, you can add and remove tasks. 
 
 
 
